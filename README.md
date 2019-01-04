@@ -1,1 +1,1 @@
-# This repo contains all the assignments for java and dbms
+# This repo has all assignments for java and dbms
