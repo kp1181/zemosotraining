@@ -9,8 +9,8 @@ public class Test1 {
 
     public void globalPrint()
     {
-        System.out.println(this.globalA);
-        System.out.println(this.globalB);
+        System.out.println(globalA);
+        System.out.println(globalB);
     }
 
     public void localPrint()
