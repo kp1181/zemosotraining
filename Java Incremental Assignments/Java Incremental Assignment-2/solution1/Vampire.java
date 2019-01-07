@@ -30,7 +30,7 @@ public class Vampire{
                     long fang2 = i / fang1;
                     if(fangCheck(i, fang1, fang2) && fang1 <= fang2){
                         vamps.add(i);
-                        System.out.println(i + ": [" + fang1 + ", " + fang2 +"]");
+                        System.out.println(i);
                     }
                 }
             }
