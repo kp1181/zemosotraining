@@ -27,16 +27,27 @@ public class Vampire{
     }
 
     private static boolean isVampire(long orig, long n1, long n2){
-        if(Long.toString(n1).endsWith("0") && Long.toString(n2).endsWith("0")) return false;
+        if(Long.toString(n1).endsWith("0") && Long.toString(n2).endsWith("0"))
+        {
+            return false;
+        }
 
         int origLen = numLength(orig);
-        if(numLength(n1) != origLen / 2 || numLength(n2) != origLen / 2) return false;
+        if(numLength(n1)!=origLen/2 || numLength(n2)!=origLen/2)
+        {
+            return false;
+        }
 
         byte[] origBytes = Long.toString(orig).getBytes();
-        byte[] fangBytes = (Long.toString(n1) + Long.toString(n2)).getBytes();
+        byte[] vampBytes = (Long.toString(n1) + Long.toString(n2)).getBytes();
+        
         Arrays.sort(origBytes);
-        Arrays.sort(fangBytes);
-        return Arrays.equals(origBytes, fangBytes);
+        Arrays.sort(vampBytes);
+        
+        if(Arrays.equals(origBytes,vampBytes))
+            return true;
+        else
+            return false;
     }
 
     private static int numLength(long num){
