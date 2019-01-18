@@ -12,10 +12,12 @@ public class Vampire{
                 i = (i*10)-1;
                 continue;
             }
-            for (long x = 2; x <= Math.sqrt(i) + 1; x++) {
-                if (i % x == 0) {
-                    long y = i / x;
-                    if (isVampire(i, x, y) && x <= y) {
+            for (long x = 2; x <= Math.sqrt(i) + 1; x++)
+            {
+                if (i % x == 0)
+                {
+                    long y = i/x;
+                    if (isVampire(i,x,y) && x <= y) {
                         vamps.add(i);
                         System.out.println(i);
                     }
