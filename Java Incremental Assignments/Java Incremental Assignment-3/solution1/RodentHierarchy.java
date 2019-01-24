@@ -78,21 +78,21 @@ public class RodentHierarchy {
 
     public static void main(String args[])
     {
-        Rodent arr[] = new Rodent[3];
+        Rodent rodents[] = new Rodent[3];
 
         //
-        arr[0] = new Mouse();
-        arr[1] = new Gerbil();
-        arr[2] = new Hamster();
+        rodents[0] = new Mouse();
+        rodents[1] = new Gerbil();
+        rodents[2] = new Hamster();
 
-        arr[0].eat();
-        arr[0].sleep();
+        rodents[0].eat();
+        rodents[0].sleep();
 
-        arr[1].eat();
-        arr[1].sleep();
+        rodents[1].eat();
+        rodents[1].sleep();
 
-        arr[2].eat();
-        arr[2].sleep();
+        rodents[2].eat();
+        rodents[2].sleep();
 
     }
 }

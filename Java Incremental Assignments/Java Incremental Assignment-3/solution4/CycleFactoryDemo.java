@@ -61,15 +61,15 @@ public class CycleFactoryDemo {
         BicycleFactory bi = new BicycleFactory();
         TricycleFactory tri = new TricycleFactory();
 
-        Cycle a = uni.getUnicycle();
-        Cycle b = bi.getBicycle();
-        Cycle c = tri.getTricycle();
-        Cycle d = uni.getUnicycle();
+        Cycle c1 = uni.getUnicycle();
+        Cycle c2 = bi.getBicycle();
+        Cycle c3= tri.getTricycle();
+        Cycle c4 = uni.getUnicycle();
 
-        a.balance();
-        b.balance();
-        c.balance();
-        d.balance();
+        c1.balance();
+        c2.balance();
+        c3.balance();
+        c4.balance();
 
 
     }

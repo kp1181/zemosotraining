@@ -1,15 +1,15 @@
 package assignment2.solution3;
 
-public class Refer {
+public class ObjectReferenceExample {
 
-    Refer(String s)
+    ObjectReferenceExample(String s)
     {
         System.out.println(s);
     }
 
     public static void main(String args[])
     {
-        Refer arr[] = new Refer[6];
+        ObjectReferenceExample arr[] = new ObjectReferenceExample[6];
         //Messages won't be displayed as the constructor is never called
     }
 }

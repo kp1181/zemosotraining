@@ -25,11 +25,11 @@ public class ExceptionDemo{
         Scanner sc = new Scanner(System.in);
         ExceptionDemo e = new ExceptionDemo();
         System.out.println("Enter a number: ");
-        int a = sc.nextInt();
+        int testingNumber = sc.nextInt();
 
         try
         {
-            e.test(a);
+            e.test(testingNumber);
         }
         catch(ExceptionA|ExceptionB|ExceptionC ex)
         {
@@ -41,3 +41,34 @@ public class ExceptionDemo{
         }
     }
 }
+
+/*
+Test cases:
+
+1)0
+Exception in thread "main" java.lang.NullPointerException
+	at assignment4.ExceptionDemo.test(ExceptionDemo.java:14)
+	at assignment4.ExceptionDemo.main(ExceptionDemo.java:32)
+In finally
+
+2)21
+assignment4.ExceptionA
+In finally
+
+3)Enter a number:
+888
+assignment4.ExceptionB
+In finally
+
+4)Enter a number:
+4651274
+assignment4.ExceptionC
+In finally
+
+5)
+Enter a number:
+-5454
+assignment4.ExceptionC
+In finally
+
+ */
