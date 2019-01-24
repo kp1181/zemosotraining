@@ -13,7 +13,6 @@ public class FileSearcher {
     {
         FileSearcher searcher = new FileSearcher();
         searcher.repeatedSearch();
-
     }
 
     void repeatedSearch()
@@ -106,7 +105,8 @@ Test cases:
 java[1
 Invalid pattern
 
-4)^[2].*[.png]$
+4)Enter the regex to match files
+^[2].*[.png]$
 /home/zadmin/Downloads/My-home-page-master/images/2.jpg
 /home/zadmin/.IdeaIC2018.3/system/vcs-users/296c3a6d.2.len
 /home/zadmin/.IdeaIC2018.3/system/vcs-users/258eacf2.2.len
