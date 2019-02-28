@@ -1,1 +1,1 @@
-# This repo has all assignments for java,spring and dbms
+# This repo has all assignments for Java, Spring Core, DBMS and Clean Code
