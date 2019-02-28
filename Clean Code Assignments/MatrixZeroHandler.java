@@ -29,16 +29,16 @@ public class MatrixZeroHandler {
 
     public static void main(String args[]){
 
-        try{
+        try
+        {
             int[][] inputMatrix = readMatrixData();
             int[][] zeroHandledMatrix = handleZeros(inputMatrix);
             printMatrix(zeroHandledMatrix);
         }
-        catch (NegativeArraySizeException e){
+        catch (NegativeArraySizeException negativeRowsAndColumns){
             logger.warning("Number of rows or columns should not be negative");
         }
-        catch(InputMismatchException e)
-        {
+        catch(InputMismatchException invalidInput){
             logger.warning("Please enter values properly!");
         }
 
